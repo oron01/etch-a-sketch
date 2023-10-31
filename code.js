@@ -27,7 +27,7 @@ let getDarkerColor = (color) => {
 let switchGameFunction = (square) => {
     let functionSwitch
     if (square == null) { functionSwitch = currentFunctionSwitch}
-    else {functionSwitch = square.target.id
+    else {functionSwitch = square.currentTarget.id
     // alert(currentFunctionSwitch)
     }
     currentFunctionSwitch = functionSwitch
