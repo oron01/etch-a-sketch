@@ -1,3 +1,15 @@
+body {
+    background-color: black;
+}
+
+body {
+    margin: auto;
+    width: 80vw;
+    height: 100vh;
+    background: url(https://i.pinimg.com/1200x/a3/25/e2/a325e20d08195a7069691990411b8e2a.jpg) no-repeat fixed ;
+    background-size: cover;
+}
+
 #gameContainer {
     width: 60vh;
     height: 60vh;
@@ -11,6 +23,7 @@ margin: 0px auto;
     width: 90%;
 display: flex;
 flex-wrap: wrap;
+border: 1px black ridge;
 }
 
 .miniContainer {
@@ -21,14 +34,27 @@ flex-wrap: wrap;
 }
 
 .square {
-    background-color: red;
+    /* background-color: white; */
     width: 100%;
     height: 100%;
     flex: 1 1 0;
-    border: 3px solid black;
+    /* border: 1px black groove; */
 }
 
 .square:hover {
     background-color: green;
     cursor: pointer;
+}
+
+.clicked {
+    background-color: black !important
+}
+
+#header {
+display: flex;
+justify-content: center;
+}
+
+#header button { 
+    margin: 2vh;
 }
