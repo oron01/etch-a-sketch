@@ -1,6 +1,8 @@
 #gameContainer {
-    width: 40vh;
-    height: 40vh;
+    width: 60vh;
+    height: 60vh;
+    /* width: 960px;
+    height: 960px; */
 margin: 0px auto;
 }
 
@@ -11,10 +13,22 @@ display: flex;
 flex-wrap: wrap;
 }
 
+.miniContainer {
+    flex: 1 1 0;
+    /* min-width: 100%; */
+    display:flex;
+    flex-direction: column;
+}
+
 .square {
     background-color: red;
-    /* width: 100%;
-    height: 100%; */
+    width: 100%;
+    height: 100%;
     flex: 1 1 0;
     border: 3px solid black;
+}
+
+.square:hover {
+    background-color: green;
+    cursor: pointer;
 }
